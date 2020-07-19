@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using Arc.ECSAudio.Components;
-using Arc.SystemGroups;
 using Unity.Entities;
 using Unity.Transforms;
 using UnityEngine;
@@ -14,7 +13,6 @@ namespace Arc.ECSAudio
         public AudioSource AudioSource;
     }
 
-    [UpdateInGroup(typeof(GameplaySimulationGroup))]
     public class PlayAudioSystem : SystemBase
     {
         private Dictionary<Guid, PlayingAudioSource> PlayingSources = new Dictionary<Guid, PlayingAudioSource>();
