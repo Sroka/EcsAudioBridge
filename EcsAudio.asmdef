@@ -1,0 +1,11 @@
+{
+  "name": "EcsAudio",
+  "references": [
+    "SystemGroups",
+    "Unity.Entities",
+    "Unity.Collections",
+    "Unity.Entities.Hybrid",
+    "Unity.Transforms",
+    "Unity.Mathematics"
+  ]
+}
