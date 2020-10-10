@@ -18,12 +18,12 @@ namespace Arc.ECSAudio
         private Dictionary<Guid, PlayingAudioSource> PlayingSources = new Dictionary<Guid, PlayingAudioSource>();
         private Queue<AudioSource>                   UnusedSources  = new Queue<AudioSource>();
 
-        private GameplaySimulationCommandBufferSystem _gameplaySimulationCommandBufferSystem;
+        private EntityCommandBufferSystem _gameplaySimulationCommandBufferSystem;
         private Camera                                _camera;
 
         protected override void OnCreate()
         {
-            _gameplaySimulationCommandBufferSystem = World.GetOrCreateSystem<GameplaySimulationCommandBufferSystem>();
+            _gameplaySimulationCommandBufferSystem = World.GetOrCreateSystem<EntityCommandBufferSystem>();
         }
 
         protected override void OnUpdate()
