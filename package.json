@@ -1,0 +1,10 @@
+{
+    "name": "com.arc.audiobridge",
+    "displayName": "ECS Audio Bridge",
+    "version": "0.4.8",
+    "unity": "2020.1",
+    "description": "ECS Audio Bridge",
+    "keywords": [
+        "utility"
+    ]
+}
